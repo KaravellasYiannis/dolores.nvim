@@ -939,7 +939,7 @@ local function set_highlights()
 
         MiniHipatternsFixme = { fg = groups.error,  bold = true, underline = true },
         MiniHipatternsHack  = { fg = groups.warn,   bold = true, underline = true },
-        MiniHipatternsNote  = { fg = groups.info,   bold = true, underline = true },
+        MiniHipatternsNote  = { fg = groups.note,   bold = true, underline = true },
         MiniHipatternsTodo  = { fg = groups.hint,   bold = true, underline = true },
 
         MiniIconsAzure = { fg = palette.c14 },
@@ -1023,7 +1023,7 @@ local function set_highlights()
 
         TreesitterContext = { fg = palette.text, bg = palette.c4 },
         TreesitterContextLineNumber = { link = "LineNr" },
-        TreesitterContextBottom = { underline = false, sp = palette.c4 },
+        TreesitterContextBottom = { underline = true, sp = palette.c4 },
         TreesitterContextLineNumberBottom = { underline = false, sp = palette.c4 },
         TreesitterContextSeparator = { link = "FloatBorder" },
 

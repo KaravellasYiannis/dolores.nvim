@@ -52,7 +52,7 @@ config.options = {
         info = "c14",
         ok = "c10",
         warn = "c8",
-        note = "c12",
+        note = "c10",
         todo = "c11",
 
         git_add = "c10",
