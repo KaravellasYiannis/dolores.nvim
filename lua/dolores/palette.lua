@@ -179,11 +179,11 @@ local palette = {
     },
     stratos = {
         dark = {
-            bg = "#090909",   -- Normal, floats, signs, TabLineFill background
-            c1 = "#090909",   -- dim inactive-window background
-            c2 = "#101010",   -- inactive terminal statusline and label foreground contrast
-            c3 = "#101010",   -- ColorColumn, CursorLine, CursorColumn, StatusLine, TabLine, popup menu
-            c4 = "#303030",   -- selected tab, terminal statusline, QuickFixLine, NonText, indent guides
+            bg = "#161616",   -- Normal, floats, signs, TabLineFill background
+            c1 = "#161616",   -- dim inactive-window background
+            c2 = "#262626",   -- inactive terminal statusline and label foreground contrast
+            c3 = "#363636",   -- ColorColumn, CursorLine, CursorColumn, StatusLine, TabLine, popup menu
+            c4 = "#464646",   -- selected tab, terminal statusline, QuickFixLine, NonText, indent guides
             c5 = "#606060",   -- line numbers, borders, fold column, separators, inlay hints
             c6 = "#a59f85",   -- secondary UI text, inactive statusline/tabline, popup menu text
             text = "#B7A18B",     -- Normal text, identifiers, punctuation, active statusline/tabline text
