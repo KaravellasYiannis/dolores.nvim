@@ -102,7 +102,7 @@ local function set_highlights()
     local default_highlights = {
         ColorColumn = { bg = palette.c3 },
         Conceal = { bg = "NONE" },
-        CurSearch = { fg = palette.c11, bg = palette.c8, bold = true },
+        CurSearch = { fg = palette.c11, bg = palette.c15, bold = true },
         Cursor = { fg = "NONE" },
         CursorColumn = { bg = palette.c3 },
         CursorLine = { bg = palette.c3 },
@@ -124,7 +124,7 @@ local function set_highlights()
         IncSearch = { fg = palette.bg, bg = palette.c8 },
         Search = { fg = palette.bg, bg = palette.c8 },
         LineNr = { fg = palette.c5, bg = palette.bg },
-        MatchParen = { fg = palette.c8, bg = palette.c12, bold = true, blend = 25 },
+        MatchParen = { fg = palette.c7, bg = palette.c12, bold = true, blend = 25 },
         ModeMsg = { fg = palette.c6 },
         MoreMsg = { fg = palette.c16 },
         NonText = { fg = palette.c4 },
@@ -350,7 +350,7 @@ local function set_highlights()
         mkdURL = { link = "markdownUrl" },
 
         ["@variable"] = { fg = palette.text },
-        ["@variable.builtin"] = { fg = palette.text, bold = styles.bold },
+        -- ["@variable.builtin"] = { fg = palette.text, bold = styles.bold },
         ["@variable.parameter"] = { link = "@parameter" },
         ["@variable.parameter.builtin"] = { link = "@variable.builtin" },
 
@@ -360,7 +360,7 @@ local function set_highlights()
 
         ["@string"] = { link = "String" },
         ["@string.regexp"] = { fg = palette.c14 },
-        ["@string.escape"] = { fg = palette.c12 },
+        ["@string.escape"] = { fg = palette.c14 },
         ["@string.special"] = { link = "String" },
         ["@string.special.symbol"] = { link = "Identifier" },
         ["@string.special.url"] = { fg = groups.link },
@@ -555,7 +555,7 @@ local function set_highlights()
         ["@lsp.typemod.operator.injected"] = { link = "@operator" },
         ["@lsp.typemod.string.injected"] = { link = "@string" },
         ["@lsp.typemod.variable.constant"] = { link = "@constant" },
-        ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+        -- ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
         ["@lsp.typemod.property.declaration.xml"] = { link = "xmlAttrib" },
         ["@lsp.typemod.string.injected.xml"] = { link = "xmlString" },
@@ -1173,7 +1173,7 @@ local function set_highlights()
         SnacksIndent = { fg = palette.c4 },
         SnacksIndentChunk = { fg = palette.c4 },
         SnacksIndentBlank = { fg = palette.c4 },
-        SnacksIndentScope = { fg = palette.c7 },
+        SnacksIndentScope = { fg = palette.c13 },
 
         SnacksPicker = { fg = palette.text, bg = palette.bg },
         SnacksPickerBorder = { fg = palette.c5, bg = palette.bg },
