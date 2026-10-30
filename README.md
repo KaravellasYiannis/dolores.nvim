@@ -31,6 +31,11 @@ Available schemes:
 - `dolores-drapetis`: dark-only high-contrast palette
 - `dolores-edelvais`: Vesper-inspired palette, switches with `vim.o.background`
 
+## Omarchy builder
+
+Build Omarchy themes and matching wallpapers from these palettes. See
+[scripts/README.md](scripts/README.md) for instructions.
+
 ## Options
 
 Configure Dolores before setting the colorscheme. All defaults are shown below.
