@@ -1181,6 +1181,7 @@ local function set_highlights()
         SnacksPickerPreview = { fg = palette.text, bg = palette.bg },
         SnacksPickerInput = { fg = palette.text, bg = palette.bg },
         SnacksPickerMatch = { fg = palette.c11, bold = styles.bold },
+        SnacksPickerDir = {fg = palette.operator },
 
         Sneak = { fg = palette.c2, bg = palette.c11 },
         SneakCurrent = { link = "StatusLineTerm" },
@@ -1383,6 +1384,7 @@ function M.apply(name)
     vim.g.colors_name = name or "dolores"
 
     package.loaded["dolores.palette"] = nil
+    package.loaded["lualine.themes.dolores"] = nil
     require("dolores.utilities").clear_cache()
     set_highlights()
 end
