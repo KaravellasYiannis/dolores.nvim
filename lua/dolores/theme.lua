@@ -103,7 +103,7 @@ local function set_highlights()
         ColorColumn = { bg = palette.c3 },
         Conceal = { bg = "NONE" },
         CurSearch = { fg = palette.c11, bg = palette.c15, bold = true },
-        Cursor = { fg = "NONE" },
+        Cursor = { fg = palette.bg, bg = palette.c14 },
         CursorColumn = { bg = palette.c3 },
         CursorLine = { bg = palette.c3 },
         CursorLineNr = { fg = palette.c7, bg = palette.bg, bold = styles.bold },
@@ -1387,6 +1387,7 @@ function M.apply(name)
     package.loaded["lualine.themes.dolores"] = nil
     require("dolores.utilities").clear_cache()
     set_highlights()
+    vim.opt.guicursor = "a:block-Cursor"
 end
 
 ---@param name? string
