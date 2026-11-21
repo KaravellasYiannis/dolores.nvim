@@ -32,7 +32,7 @@ for _, dir in ipairs(vim.fn.glob(output .. "/dolores-*", false, true)) do
     assert(colors.bright_magenta == palette.c14)
     count = count + 1
 end
-assert(count == 20, "Expected 20 palette variants")
+assert(count == 21, "Expected 21 palette variants")
 
 -- Existing output must not be overwritten without explicit permission.
 local before = vim.fn.readfile(output .. "/dolores-dark/colors.toml")
@@ -48,4 +48,4 @@ assert(require("dolores.palettes").stratos.dark.bg == "#161616")
 
 -- Remove only the test-owned temporary directory.
 vim.fn.delete(output, "rf")
-print("PASS: 20 themes, exact Neovim palettes, overwrite protection, overrides and fallback")
+print("PASS: 21 themes, exact Neovim palettes, overwrite protection, overrides and fallback")

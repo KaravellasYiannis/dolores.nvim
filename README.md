@@ -30,6 +30,7 @@ Available schemes:
 - `dolores-glykeria`: Gruvbox palette, switches with `vim.o.background`
 - `dolores-drapetis`: dark-only high-contrast palette
 - `dolores-edelvais`: Vesper-inspired palette, switches with `vim.o.background`
+- `dolores-skeley`: light-only Flexoki-inspired palette on a warm `#f1efe8` background
 
 ## Omarchy builder
 

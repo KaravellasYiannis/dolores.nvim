@@ -86,13 +86,21 @@ for family, variants in pairs(require("dolores.palettes")) do
         count = count + 1
     end
 end
-assert(count == 20, "Expected 20 palette variants")
+assert(count == 21, "Expected 21 palette variants")
 
 -- Dark-only families must still work when Neovim requests a light background.
 vim.o.background = "light"
 require("dolores").setup({ styles = { transparency = false } })
 vim.cmd.colorscheme("dolores-stratos")
 check(require("dolores.palettes").stratos.dark, false)
+
+-- Light-only families must still work when Neovim requests a dark background.
+vim.o.background = "dark"
+vim.cmd.colorscheme("dolores-skeley")
+local skeley = require("dolores.palettes").skeley.light
+assert(require("dolores.palette").bg == "#f1efe8")
+assert(vim.api.nvim_get_hl(0, { name = "Normal" }).bg == 0xf1efe8)
+check(skeley, false)
 
 -- Explicit user overrides are used as-is, without automatic color correction.
 require("dolores").setup({ palette = { c14 = "navy", c6 = "gray", c4 = "white" } })
@@ -105,4 +113,4 @@ assert(theme.normal.b.fg == require("dolores.palette").text)
 assert(theme.inactive.c.fg == "gray")
 
 assert(#failures == 0, table.concat(failures, "\n"))
-print("PASS: 20 named lualine palettes, middle-section contrast, transparency, overrides, reloads and fallback")
+print("PASS: 21 named lualine palettes, middle-section contrast, transparency, overrides, reloads and fallback")

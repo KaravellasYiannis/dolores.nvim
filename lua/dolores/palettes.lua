@@ -503,6 +503,32 @@ local palette = {
             c18 = "#D2D2CD",      -- cursor-like surfaces and subdued rendered comments
         },
     },
+    skeley = {
+        light = {
+            bg = "#f1efe8",       -- Normal, floats, signs, TabLineFill background
+            c1 = "#eceae2",       -- dim inactive-window background
+            c2 = "#e8e6de",       -- inactive terminal statusline and label foreground contrast
+            c3 = "#e2e0d7",       -- ColorColumn, CursorLine, CursorColumn, StatusLine, TabLine, popup menu
+            c4 = "#d6d3c9",       -- selected tab, terminal statusline, QuickFixLine, NonText, indent guides
+            c5 = "#878580",       -- line numbers, borders, fold column, separators, inlay hints
+            c6 = "#64625c",       -- secondary UI text, inactive statusline/tabline, popup menu text
+            text = "#343331",     -- Normal text, identifiers, punctuation, active statusline/tabline text
+            operator = "#575653", -- operators
+            visual = "#4385be",   -- visual selection
+            c7 = "#ad5832",       -- keywords, conditionals, repeats, strong prompts
+            c8 = "#956b16",       -- warning/yellow diagnostics and terminal yellow
+            c9 = "#77746b",       -- comments and folded text
+            c10 = "#66800b",      -- strings, quickfix filenames, success/green diagnostics
+            c11 = "#af3029",      -- errors, exceptions, SpellBad, search labels
+            c12 = "#205ea6",      -- functions, methods, fields, match highlights
+            c13 = "#24837b",      -- types, imports, quickfix line/column numbers
+            c14 = "#5e409d",      -- constants, booleans, numbers, labels, titles, directories
+            c15 = "#e2c580",      -- CurSearch background
+            c16 = "#a02f6f",      -- special comments, messages, links, cyan/teal accents
+            c17 = "#e8e6de",      -- selected completion, picker, buffer, and tab backgrounds
+            c18 = "#cecbc0",      -- cursor-like surfaces and subdued rendered comments
+        },
+    },
 }
 
 return palette
